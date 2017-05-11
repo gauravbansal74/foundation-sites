@@ -63,6 +63,10 @@ $button-palette: $foundation-palette !default;
 /// @type List
 $button-opacity-disabled: 0.25 !default;
 
+/// opacity for a disabled button.
+/// @type Font-weight
+$button-font-weight: 500 !default;
+
 /// Background color lightness on hover for buttons.
 /// @type Number
 $button-background-hover-lightness: -20% !default;
@@ -86,6 +90,7 @@ $button-transition: background-color 0.25s ease-out, color 0.25s ease-out !defau
   display: inline-block;
   vertical-align: middle;
   margin: $button-margin;
+  font-weight: $button-font-weight;
   font-family: $button-font-family;
 
   @if (type-of($button-padding) == 'map') {
