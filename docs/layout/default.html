@@ -7,78 +7,205 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{{description}}">
   <link rel="icon" href="assets/img/icons/foundation-favicon.ico" type="image/x-icon">
-  <title>{{#unlesspage 'index'}}{{title}} | {{/unlesspage}}Foundation for Sites 6 Docs</title>
+  <title>Offcampus4u</title>
   <link href="assets/css/docs.css" rel="stylesheet" />
   <link href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
   <!-- <link rel="stylesheet" href="./node_modules/motion-ui/dist/motion-ui.css" /> -->
 </head>
 <body>
-
-  <!-- Info Banner For Announcements or Links -->
-  <!-- <a href="http://zurb.com/wired" id="notice">
-    <div class="info">
-      <div id="clockdiv" class="countdown">
-          <span class="timer-day days"></span>
-          <span class="timer-colon">:</span>
-        <span class="timer-hour hours"></span>
-        <span class="timer-colon">:</span>
-        <span class="timer-hour minutes"></span>
-        <span class="timer-colon">:</span>
-        <span class="timer-seconds seconds"></span>
+  <!-- Offcampus4u Top navigation menu bar -->
+  <div class="navigation">
+      <nav class="top-bar">
+        <div class="top-bar-title">
+          <strong>Site Title</strong>
+        </div>
+        
+          <div class="top-bar-right">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li>
+                <a href="#">One</a>
+                <ul class="menu vertical">
+                  <li><a href="#">One</a></li>
+                  <li><a href="#">Two</a></li>
+                  <li><a href="#">Three</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Two</a></li>
+              <li><a href="#">Three</a></li>
+            </ul>
+          </div>  
+      </nav>
+  </div>
+  <!-- Main Body Section -->
+  <section>
+  <div class="row">
+    <div class="medium-8 large-8 columns">
+      <table class="hover">
+          <thead>
+            <tr>
+              <th width="200">Table Header</th>
+              <th>Table Header</th>
+              <th width="150">Table Header</th>
+              <th width="150">Table Header</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Content Goes Here</td>
+              <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+              <td>Content Goes Here</td>
+              <td>Content Goes Here</td>
+            </tr>
+            <tr>
+              <td>Content Goes Here</td>
+              <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+              <td>Content Goes Here</td>
+              <td>Content Goes Here</td>
+            </tr>
+            <tr>
+              <td>Content Goes Here</td>
+              <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+              <td>Content Goes Here</td>
+              <td>Content Goes Here</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="medium-3 large-3 columns">
+        <form>
+          <div class="row">
+            <div class="small-3 columns">
+              <label for="middle-label" class="text-right middle">Label</label>
+            </div>
+            <div class="small-9 columns">
+              <input type="text" id="middle-label" placeholder="Right- and middle-aligned text input">
+              Hello asdsad
+            </div>
+          </div>
+        </form>
+      </div>
+   </div>   
+  </section>
+  <section>
+    <div class="footer-course-upsell">
+  <section class="sites-course">
+    <div class="row" data-equalizer>
+      <div class="medium-7 medium-push-4 columns">
+        <div class="course-callout" data-equalizer-watch>
+          <h3 class="sites-course-title"><span>WEBINAR</span> Introduction to Foundation 6</h3>
+          <p>Achieve maximum thrust by learning how to use Foundation 6 to power your projects. The Foundation team will get you up to speed on everything you need to know to get the most out of Foundation 6.</p>
+          <a href="http://zurb.com/university/foundation-intro?utm_source=Foundation%20Docs&utm_medium=Docs&utm_content=Footer&utm_campaign=Footer%20Upsell" class="button primary" target="_blank">Learn Foundation 6</a>
+        </div>
+      </div>
+      <div class="medium-2 medium-pull-8 columns show-for-medium">
+        <div data-equalizer-watch>
+          <a href="http://zurb.com/university/foundation-intro?utm_source=Foundation%20Docs&utm_medium=Docs&utm_content=Footer&utm_campaign=Footer%20Upsell" class="" target="_blank"><img src="{{root}}assets/img/yeti.svg"/></a>
+        </div>
       </div>
     </div>
-  </a> -->
+  </section>
+</div>
 
-  <div class="off-canvas-wrapper"><div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+<div class="docs-newsletter">
+  <div class="row">
+    <div class="medium-7 large-8 columns">
+      <a target="_blank" href="http://foundation.zurb.com/learn/responsive-reading.html">
+        <h5 class="">Download ZURB’s 21 Responsive Trends That Will Shape 2017</h5>
+        <p style="margin-bottom: 0;">Stay informed with amazing responsive trends each month from ZURB.</p>
+      </a>
+    </div>
+    <div class="medium-5 large-4 footer-signup-form columns">
+      <a style="margin-bottom: 0;" target="_blank" href="http://foundation.zurb.com/learn/responsive-reading.html" class="button expanded">Download the PDF</a>
+    </div>
+  </div>
+</div>
 
-    {{> off-canvi}}
+<div class="zurb-footer-top bg-fblue">
+  <div class="row property">
+    <div class="medium-4 columns">
+      <div class="property-info">
+        <h3>Foundation for Sites</h3>
+        <p>Foundation is a responsive front-end framework made by <a href="http://zurb.com">ZURB</a>, a product design company in Campbell, CA. This framework is the result of building web products &amp; services since 1998.
+        </p>
+      </div>
+    </div>
+
+    <div class="medium-8 columns">
+      <div class="row collapse">
+        <div class="medium-4 columns">
+          <div class="learn-links">
+            <h4 class="hide-for-small">Want more?</h4>
+            <ul>
+              <li><a href="http://foundation.zurb.com/emails.html">Foundation for Emails</a></li>
+              <li><a href="http://zurb.com/university/courses">Foundation Training</a></li>
+              <li><a href="http://zurb.com/library">Design Resources</a></li>
+            </ul>
+          </div>
+        </div>
+          <div class="medium-4 columns">
+            <div class="support-links">
+              <h4 class="hide-for-small">Talk to us</h4>
+              <p>Tweet us at <br> <a href="https://twitter.com/zurbfoundation">@ZURBfoundation</a></p>
+              <p><a href="http://foundation.zurb.com/get-involved/contribute.html">Get involved in<br>our amazing community.</a></p>
+            </div>
+          </div>
+        <div class="medium-4 columns">
+          <div class="connect-links">
+            <h4 class="hide-for-small">Stay Updated</h4>
+            <p>Keep up with the latest on Foundation. Find us on <a href="https://github.com/zurb/foundation">Github</a>.</p>
+            <a href="http://zurb.com/news" class="small button">Stay Connected</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="zurb-footer-bottom">
+  <div class="row">
+    <div class="medium-4 medium-push-8 columns">
+      <ul class="home-social">
+        <li><a href="http://www.youtube.com/ZURB" class="youtube"></a></li>
+        <li><a href="http://www.twitter.com/ZURB" class="twitter"></a></li>
+        <li><a href="http://www.facebook.com/ZURB" class="facebook"></a></li>
+        <li><a href="http://zurb.com/contact" class="mail"></a></li>
+      </ul>
+    </div>
+    <div class="medium-8 medium-pull-4 columns">
+      <a href="http://www.zurb.com" class="zurb-logo regular"></a>
+      <ul class="zurb-links">
+        <li><a href="http://zurb.com/about">About</a></li>
+        <li><a href="http://zurb.com/blog">Blog</a></li>
+        <li><a href="http://zurb.com/news">News<span class="show-for-medium-up"> &amp; Events</span></a></li>
+        <li><a href="http://zurb.com/contact">Contact</a></li>
+        <li><a href="http://zurb.com/sitemap">Sitemap</a></li>
+       </ul>
+       <p class="copyright">&copy; 1998&dash;2017 ZURB, Inc. All rights reserved.</p>
+    </div>
+  </div>
+</div>
+
+  </section>
+  <!-- Navigation top bar ends here -->
+  <!-- <div class="off-canvas-wrapper">
+  <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
     <div class="off-canvas-content" data-off-canvas-content>
-      <!-- Info Banner For Announcements or Links -->
-      <!-- <a href="http://zurb.com/article/1416/foundation-6-is-here" id="notice">
-        <div class="info">
-          <h5>Foundation 6 is here!</h5>
-        </div>
-      </a> -->
 
       {{> navigation}}
-      {{> mobile-navigation}}
 
       <input type="text" class="docs-search" data-docs-search placeholder="Find a page, component, variable, mixin, function...">
 
-      <div class="expanded row">
-        <div class="medium-9 large-10 medium-push-3 large-push-2 columns">
-<!-- do not indent -->
-{{> body}}
-        </div>
-        <div class="medium-3 large-2 medium-pull-9 large-pull-10 columns">
-          {{> component-list}}
-        </div>
-      </div>
+    
 
       {{> footer}}
     </div>
-  </div></div>
+  </div>
+  </div> -->
 
-  <script>
-  var _gaq = _gaq || [];
-  _gaq.push(
-    ['_setAccount', 'UA-2195009-2'],
-    ['_trackPageview'],
-    ['b._setAccount', 'UA-2195009-27'],
-    ['b._trackPageview']
-  );
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-  </script>
 
   <script src="assets/js/vendor.js"></script>
-  <!--
-  <script src="assets/js/foundation.js"></script>
-  -->
   <script src="assets/js/plugins/foundation.core.js"></script>
   <script src="assets/js/plugins/foundation.util.box.js"></script>
   <script src="assets/js/plugins/foundation.util.imageLoader.js"></script>
@@ -112,28 +239,7 @@
   <script src="assets/js/plugins/foundation.responsiveAccordionTabs.js"></script>
 
   <script src="assets/js/docs.js"></script>
-  <script type="text/javascript" src="https://intercom.zurb.com/scripts/zcom.js"></script>
-  <script type="text/javascript">
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-    document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
-    fbq('init', '585552368271130');
-    fbq('track', "PageView");
-  </script>
-  <!-- Twitter universal website tag code -->
-  <script>
-    !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
-    },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
-    a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
-    // Insert Twitter Pixel ID and Standard Event data below
-    twq('init','nvkjx');
-    twq('track','PageView');
-  </script>
-  <!-- End Twitter universal website tag code -->
-
+ 
 
 </body>
 </html>
