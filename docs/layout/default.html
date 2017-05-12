@@ -11,6 +11,12 @@
   <link href="assets/css/docs.css" rel="stylesheet" />
   <link href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
   <!-- <link rel="stylesheet" href="./node_modules/motion-ui/dist/motion-ui.css" /> -->
+  <style type="text/css">
+    html, 
+      body {
+        height: 100%;
+      }
+  </style>
 </head>
 <body>
   <!-- Offcampus4u Top navigation menu bar -->
@@ -37,155 +43,137 @@
       </nav>
   </div>
   <!-- Main Body Section -->
-  <section>
-  <div class="row">
-    <div class="medium-8 large-8 columns">
-      <table class="hover">
-          <thead>
-            <tr>
-              <th width="200">Table Header</th>
-              <th>Table Header</th>
-              <th width="150">Table Header</th>
-              <th width="150">Table Header</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Content Goes Here</td>
-              <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
-              <td>Content Goes Here</td>
-              <td>Content Goes Here</td>
-            </tr>
-            <tr>
-              <td>Content Goes Here</td>
-              <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-              <td>Content Goes Here</td>
-              <td>Content Goes Here</td>
-            </tr>
-            <tr>
-              <td>Content Goes Here</td>
-              <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-              <td>Content Goes Here</td>
-              <td>Content Goes Here</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="medium-3 large-3 columns">
-        <form>
-          <div class="row">
-            <div class="small-3 columns">
-              <label for="middle-label" class="text-right middle">Label</label>
+  <section class="clearfix">
+        <div class="medium-1 large-1 columns">
+          <ul class="menu vertical">
+            <li>
+              <a href="#">
+                  <span data-tooltip aria-haspopup="true" class="has-tip right" data-disable-hover="false" tabindex="3" title="Candidates">
+                    Candidates
+                  </span>
+              </a>
+            </li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+            <li><a href="#">Four</a></li>
+          </ul>
+        </div>
+        <div class="medium-9 large-9 columns">
+        <span class="twitter-typeahead" style="position: relative; display: inline-block;">
+            <input type="text" class="docs-search tt-input" data-docs-search="" placeholder="Find a page, component, variable, mixin, function..." autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;">
+            <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: &quot;Proxima Nova&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 20.8px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 300; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;">
+            </pre>
+            <div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
+              <div class="tt-dataset tt-dataset-0"></div>
             </div>
-            <div class="small-9 columns">
-              <input type="text" id="middle-label" placeholder="Right- and middle-aligned text input">
-              Hello asdsad
+        </span>
+          <table class="hover">
+            <thead>
+              <tr>
+                <th>Table Header</th>
+                <th>Table Header</th>
+                <th>Table Header</th>
+                <th>Table Header</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Content Goes Here</td>
+                <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+              <tr>
+                <td>Content Goes Here</td>
+                <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+              <tr>
+                <td>Content Goes Here</td>
+                <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+              <tr>
+                <td>Content Goes Here</td>
+                <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+              <tr>
+                <td>Content Goes Here</td>
+                <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+              <tr>
+                <td>Content Goes Here</td>
+                <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+              <tr>
+                <td>Content Goes Here</td>
+                <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+              <tr>
+                <td>Content Goes Here</td>
+                <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+              <tr>
+                <td>Content Goes Here</td>
+                <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <!-- Right Hand Side Action Section -->
+        <div class="medium-2 large-2 columns callout">
+          <form>
+            <div class="row">
+              <div class="small-3 columns">
+                <label for="middle-label" class="text-right middle">Label</label>
+              </div>
+              <div class="small-9 columns">
+                <input type="text" id="middle-label" placeholder="Right- and middle-aligned text input">
+                Hello asdsad
+              </div>
             </div>
-          </div>
-        </form>
-      </div>
-   </div>   
+          </form>
+        </div> 
   </section>
   <section>
-    <div class="footer-course-upsell">
-  <section class="sites-course">
-    <div class="row" data-equalizer>
-      <div class="medium-7 medium-push-4 columns">
-        <div class="course-callout" data-equalizer-watch>
-          <h3 class="sites-course-title"><span>WEBINAR</span> Introduction to Foundation 6</h3>
-          <p>Achieve maximum thrust by learning how to use Foundation 6 to power your projects. The Foundation team will get you up to speed on everything you need to know to get the most out of Foundation 6.</p>
-          <a href="http://zurb.com/university/foundation-intro?utm_source=Foundation%20Docs&utm_medium=Docs&utm_content=Footer&utm_campaign=Footer%20Upsell" class="button primary" target="_blank">Learn Foundation 6</a>
+    <div class="zurb-footer-bottom">
+      <div class="row">
+        <div class="medium-4 medium-push-8 columns">
+          <ul class="home-social">
+            <li><a href="http://www.youtube.com/ZURB" class="youtube"></a></li>
+            <li><a href="http://www.twitter.com/ZURB" class="twitter"></a></li>
+            <li><a href="http://www.facebook.com/ZURB" class="facebook"></a></li>
+            <li><a href="http://zurb.com/contact" class="mail"></a></li>
+          </ul>
         </div>
-      </div>
-      <div class="medium-2 medium-pull-8 columns show-for-medium">
-        <div data-equalizer-watch>
-          <a href="http://zurb.com/university/foundation-intro?utm_source=Foundation%20Docs&utm_medium=Docs&utm_content=Footer&utm_campaign=Footer%20Upsell" class="" target="_blank"><img src="{{root}}assets/img/yeti.svg"/></a>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
-
-<div class="docs-newsletter">
-  <div class="row">
-    <div class="medium-7 large-8 columns">
-      <a target="_blank" href="http://foundation.zurb.com/learn/responsive-reading.html">
-        <h5 class="">Download ZURB’s 21 Responsive Trends That Will Shape 2017</h5>
-        <p style="margin-bottom: 0;">Stay informed with amazing responsive trends each month from ZURB.</p>
-      </a>
-    </div>
-    <div class="medium-5 large-4 footer-signup-form columns">
-      <a style="margin-bottom: 0;" target="_blank" href="http://foundation.zurb.com/learn/responsive-reading.html" class="button expanded">Download the PDF</a>
-    </div>
-  </div>
-</div>
-
-<div class="zurb-footer-top bg-fblue">
-  <div class="row property">
-    <div class="medium-4 columns">
-      <div class="property-info">
-        <h3>Foundation for Sites</h3>
-        <p>Foundation is a responsive front-end framework made by <a href="http://zurb.com">ZURB</a>, a product design company in Campbell, CA. This framework is the result of building web products &amp; services since 1998.
-        </p>
-      </div>
-    </div>
-
-    <div class="medium-8 columns">
-      <div class="row collapse">
-        <div class="medium-4 columns">
-          <div class="learn-links">
-            <h4 class="hide-for-small">Want more?</h4>
-            <ul>
-              <li><a href="http://foundation.zurb.com/emails.html">Foundation for Emails</a></li>
-              <li><a href="http://zurb.com/university/courses">Foundation Training</a></li>
-              <li><a href="http://zurb.com/library">Design Resources</a></li>
-            </ul>
-          </div>
-        </div>
-          <div class="medium-4 columns">
-            <div class="support-links">
-              <h4 class="hide-for-small">Talk to us</h4>
-              <p>Tweet us at <br> <a href="https://twitter.com/zurbfoundation">@ZURBfoundation</a></p>
-              <p><a href="http://foundation.zurb.com/get-involved/contribute.html">Get involved in<br>our amazing community.</a></p>
-            </div>
-          </div>
-        <div class="medium-4 columns">
-          <div class="connect-links">
-            <h4 class="hide-for-small">Stay Updated</h4>
-            <p>Keep up with the latest on Foundation. Find us on <a href="https://github.com/zurb/foundation">Github</a>.</p>
-            <a href="http://zurb.com/news" class="small button">Stay Connected</a>
-          </div>
+        <div class="medium-8 medium-pull-4 columns">
+          <a href="http://www.zurb.com" class="zurb-logo regular"></a>
+          <ul class="zurb-links">
+            <li><a href="http://zurb.com/about">About</a></li>
+            <li><a href="http://zurb.com/blog">Blog</a></li>
+            <li><a href="http://zurb.com/news">News<span class="show-for-medium-up"> &amp; Events</span></a></li>
+            <li><a href="http://zurb.com/contact">Contact</a></li>
+            <li><a href="http://zurb.com/sitemap">Sitemap</a></li>
+           </ul>
+           <p class="copyright">&copy; 1998&dash;2017 ZURB, Inc. All rights reserved.</p>
         </div>
       </div>
     </div>
-  </div>
-
-</div>
-
-<div class="zurb-footer-bottom">
-  <div class="row">
-    <div class="medium-4 medium-push-8 columns">
-      <ul class="home-social">
-        <li><a href="http://www.youtube.com/ZURB" class="youtube"></a></li>
-        <li><a href="http://www.twitter.com/ZURB" class="twitter"></a></li>
-        <li><a href="http://www.facebook.com/ZURB" class="facebook"></a></li>
-        <li><a href="http://zurb.com/contact" class="mail"></a></li>
-      </ul>
-    </div>
-    <div class="medium-8 medium-pull-4 columns">
-      <a href="http://www.zurb.com" class="zurb-logo regular"></a>
-      <ul class="zurb-links">
-        <li><a href="http://zurb.com/about">About</a></li>
-        <li><a href="http://zurb.com/blog">Blog</a></li>
-        <li><a href="http://zurb.com/news">News<span class="show-for-medium-up"> &amp; Events</span></a></li>
-        <li><a href="http://zurb.com/contact">Contact</a></li>
-        <li><a href="http://zurb.com/sitemap">Sitemap</a></li>
-       </ul>
-       <p class="copyright">&copy; 1998&dash;2017 ZURB, Inc. All rights reserved.</p>
-    </div>
-  </div>
-</div>
-
   </section>
   <!-- Navigation top bar ends here -->
   <!-- <div class="off-canvas-wrapper">
