@@ -25,10 +25,11 @@ var webpackStream = require('webpack-stream');
 var webpack2 = require('webpack');
 var named = require('vinyl-named');
 
+var DEST = "./../../src/styles/foundation/assets/";
 
 var ARGS = yargs.argv;
 var FOUNDATION_VERSION = require('../../package.json').version;
-var OUTPUT_DIR = ARGS.output || 'custom-build';
+var OUTPUT_DIR = DEST;
 var COMPATIBILITY = [
   'last 2 versions',
   'ie >= 9',
@@ -75,7 +76,7 @@ gulp.task('customizer:prepareSassDeps', function() {
       'node_modules/@(sassy-lists)/stylesheets/functions/replace',
       'node_modules/@(sassy-lists)/stylesheets/functions/to-list'
     ])
-    .pipe(gulp.dest('_vendor'));
+    .pipe(gulp.dest(DEST + 'vendor'));
 });
 
 // Creates a Sass file from the module/variable list and creates foundation.css and foundation.min.css

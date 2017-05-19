@@ -9,6 +9,8 @@ var named = require('vinyl-named');
 
 var CONFIG = require('../config.js');
 
+var DEST = "./../../src/styles/foundation/assets/"
+
 // Compiles JavaScript into a single file
 gulp.task('javascript', ['javascript:foundation', 'javascript:deps', 'javascript:docs']);
 
@@ -58,20 +60,20 @@ gulp.task('javascript:plugin-core', function() {
   return gulp.src('js/entries/plugins/foundation.core.js')
     .pipe(named())
     .pipe(webpackStream({externals: {'jquery': 'jQuery'}, module: moduleConfig}, webpack2))
-    .pipe(gulp.dest('_build/assets/js/plugins'));
+    .pipe(gulp.dest(DEST + 'js/plugins'));
 });
 gulp.task('javascript:plugins', ['javascript:plugin-core'], function() {
   return gulp.src(['js/entries/plugins/*.js', '!js/entries/plugins/foundation.core.js'])
     .pipe(named())
     .pipe(webpackStream({externals: pluginsAsExternals, module: moduleConfig}, webpack2))
-    .pipe(gulp.dest('_build/assets/js/plugins'));
+    .pipe(gulp.dest(DEST + 'js/plugins'));
 });
 
 gulp.task('javascript:foundation', ['javascript:plugins'], function() {
   return gulp.src('js/entries/foundation.js')
     .pipe(named())
     .pipe(webpackStream({externals: {jquery: 'jQuery'}, module: moduleConfig}, webpack2))
-    .pipe(gulp.dest('_build/assets/js'));
+    .pipe(gulp.dest(DEST + 'js'));
 });
 //gulp.task('javascript:foundation', function() {
 //  return gulp.src(CONFIG.JS_FILES)
@@ -85,11 +87,11 @@ gulp.task('javascript:foundation', ['javascript:plugins'], function() {
 gulp.task('javascript:deps', function() {
   return gulp.src(CONFIG.JS_DEPS)
     .pipe(concat('vendor.js'))
-    .pipe(gulp.dest('_build/assets/js'));
+    .pipe(gulp.dest(DEST + 'js'));
 });
 
 gulp.task('javascript:docs', function() {
   return gulp.src(CONFIG.JS_DOCS)
     .pipe(concat('docs.js'))
-    .pipe(gulp.dest('_build/assets/js'));
+    .pipe(gulp.dest(DEST + 'js'));
 });

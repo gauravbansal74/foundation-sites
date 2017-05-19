@@ -7,6 +7,8 @@ var doiuse = require('doiuse');
 
 var CONFIG = require('../config.js');
 
+var DEST = "./../../src/styles/foundation/assets/";
+
 gulp.task('check', ['check:deps', 'check:browserSupport']);
 
 // Check npm dependencies
@@ -16,7 +18,7 @@ gulp.task('check:deps', function() {
 
 // Check browser support
 gulp.task('check:browserSupport', function() {
-  return gulp.src(['_build/assets/css/foundation.css'])
+  return gulp.src([DEST + 'css/foundation.css'])
     .pipe(postcss([doiuse({
       browsers: CONFIG.CSS_COMPATIBILITY,
       onFeatureUsage: function (usageInfo) {

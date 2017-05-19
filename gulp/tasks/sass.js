@@ -13,13 +13,14 @@ var autoprefixer = require('autoprefixer');
 
 var CONFIG = require('../config.js');
 
+var DEST = "./../../src/styles/foundation/assets/"
 // Compiles Sass files into CSS
 gulp.task('sass', ['sass:foundation', 'sass:docs']);
 
 // Prepare dependencies
 gulp.task('sass:deps', function() {
   return gulp.src(CONFIG.SASS_DEPS_FILES)
-    .pipe(gulp.dest('_vendor'));
+    .pipe(gulp.dest(DEST + 'vendor'));
 });
 
 // Compiles Foundation Sass
@@ -32,7 +33,7 @@ gulp.task('sass:foundation', ['sass:deps'], function() {
       browsers: CONFIG.CSS_COMPATIBILITY
     })]))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('_build/assets/css'))
+    .pipe(gulp.dest(DEST + 'css'))
     .on('finish', function() {
       gulp.src(CONFIG.SASS_LINT_FILES)
         .pipe(sassLint({
@@ -53,12 +54,12 @@ gulp.task('sass:docs', ['sass:deps'], function() {
       browsers: CONFIG.CSS_COMPATIBILITY
     })]))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('_build/assets/css'));
+    .pipe(gulp.dest(DEST + 'css'));
 });
 
 // Audits CSS filesize, selector count, specificity, etc.
 gulp.task('sass:audit', ['sass:foundation'], function(cb) {
-  fs.readFile('./_build/assets/css/foundation.css', function(err, data) {
+  fs.readFile(DEST + 'css/foundation.css', function(err, data) {
     var parker = new Parker(require('parker/metrics/All'));
     var results = parker.run(data.toString());
     console.log(prettyJSON.render(results));

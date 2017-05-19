@@ -8,6 +8,8 @@ var rimraf = require('rimraf').sync;
 
 var CONFIG = require('../config.js');
 
+var DEST = "./../../src/styles/foundation/assets/";
+
 // Runs unit tests
 gulp.task('test', ['sass:foundation', 'test:transpile-js', 'watch'], function() {
   browser.init({
@@ -15,7 +17,7 @@ gulp.task('test', ['sass:foundation', 'test:transpile-js', 'watch'], function() 
       baseDir: 'test/visual',
       directory: true,
       routes: {
-        "/assets": "_build/assets",
+        "/assets": DEST,
         "/motion-ui": "node_modules/motion-ui"
       }
     }
