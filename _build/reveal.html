@@ -1,0 +1,405 @@
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modal dialogs, or pop-up windows, are handy for prototyping and production. Foundation includes Reveal, our jQuery modal plugin, to make this easy for you.">
+  <link rel="icon" href="assets/img/icons/foundation-favicon.ico" type="image/x-icon">
+  <title>Offcampus4u</title>
+  <link href="assets/css/docs.css?hash=dca27457a3ed3aa5d32d1e8f20253578" rel="stylesheet" />
+  <link href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css?hash=f4398c0eb73cacd653193fd8853bfb1e" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="./node_modules/motion-ui/dist/motion-ui.css" /> -->
+  <style type="text/css">
+    html, 
+      body {
+        height: 100%;
+      }
+  </style>
+</head>
+<body>
+  <!-- Offcampus4u Top navigation menu bar -->
+  <div class="navigation">
+      <nav class="top-bar">
+        <div class="top-bar-title">
+          <strong>Site Title</strong>
+        </div>
+        
+          <div class="top-bar-right">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li>
+                <a href="#">One</a>
+                <ul class="menu vertical">
+                  <li><a href="#">One</a></li>
+                  <li><a href="#">Two</a></li>
+                  <li><a href="#">Three</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Two</a></li>
+              <li><a href="#">Three</a></li>
+            </ul>
+          </div>  
+      </nav>
+  </div>
+  <!-- Main Body Section -->
+  <section class="clearfix">
+        <div class="medium-1 large-1 columns">
+          <ul class="menu vertical">
+            <li>
+              <a href="#">
+                  <span data-tooltip aria-haspopup="true" class="has-tip right" data-disable-hover="false" tabindex="3" title="Candidates">
+                    Candidates
+                  </span>
+              </a>
+            </li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+            <li><a href="#">Four</a></li>
+          </ul>
+        </div>
+        <div class="medium-9 large-9 columns">
+        <span class="twitter-typeahead" style="position: relative; display: inline-block;">
+            <input type="text" class="docs-search tt-input" data-docs-search="" placeholder="Find a page, component, variable, mixin, function..." autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;">
+            <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: &quot;Proxima Nova&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 20.8px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 300; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;">
+            </pre>
+            <div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
+              <div class="tt-dataset tt-dataset-0"></div>
+            </div>
+        </span>
+          <table class="hover">
+            <thead>
+              <tr>
+                <th>Table Header</th>
+                <th>Table Header</th>
+                <th>Table Header</th>
+                <th>Table Header</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Content Goes Here</td>
+                <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+              <tr>
+                <td>Content Goes Here</td>
+                <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+              <tr>
+                <td>Content Goes Here</td>
+                <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+              <tr>
+                <td>Content Goes Here</td>
+                <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+              <tr>
+                <td>Content Goes Here</td>
+                <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+              <tr>
+                <td>Content Goes Here</td>
+                <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+              <tr>
+                <td>Content Goes Here</td>
+                <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+              <tr>
+                <td>Content Goes Here</td>
+                <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+              <tr>
+                <td>Content Goes Here</td>
+                <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <!-- Right Hand Side Action Section -->
+        <div class="medium-2 large-2 columns callout">
+          <form>
+            <div class="row">
+              <div class="small-3 columns">
+                <label for="middle-label" class="text-right middle">Label</label>
+              </div>
+              <div class="small-9 columns">
+                <input type="text" id="middle-label" placeholder="Right- and middle-aligned text input">
+                Hello asdsad
+              </div>
+            </div>
+          </form>
+        </div> 
+  </section>
+  <section>
+    <div class="zurb-footer-bottom">
+      <div class="row">
+        <div class="medium-4 medium-push-8 columns">
+          <ul class="home-social">
+            <li><a href="http://www.youtube.com/ZURB" class="youtube"></a></li>
+            <li><a href="http://www.twitter.com/ZURB" class="twitter"></a></li>
+            <li><a href="http://www.facebook.com/ZURB" class="facebook"></a></li>
+            <li><a href="http://zurb.com/contact" class="mail"></a></li>
+          </ul>
+        </div>
+        <div class="medium-8 medium-pull-4 columns">
+          <a href="http://www.zurb.com" class="zurb-logo regular"></a>
+          <ul class="zurb-links">
+            <li><a href="http://zurb.com/about">About</a></li>
+            <li><a href="http://zurb.com/blog">Blog</a></li>
+            <li><a href="http://zurb.com/news">News<span class="show-for-medium-up"> &amp; Events</span></a></li>
+            <li><a href="http://zurb.com/contact">Contact</a></li>
+            <li><a href="http://zurb.com/sitemap">Sitemap</a></li>
+           </ul>
+           <p class="copyright">&copy; 1998&dash;2017 ZURB, Inc. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Navigation top bar ends here -->
+  <!-- <div class="off-canvas-wrapper">
+  <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+    <div class="off-canvas-content" data-off-canvas-content>
+
+      <nav class="marketing-topbar show-for-medium">
+      
+        <ul class="menu">
+          <li class="topbar-title"><a href="http://foundation.zurb.com/index.html"><img src="assets/img/logos/zurb-logo.svg" alt="ZURB"> Foundation</a></li>
+        </ul>
+      
+        <ul class="dropdown menu" data-dropdown-menu data-click-open="false">
+      
+          <li>
+            <a href="http://zurb.com/responsive">Showcase</a>
+            <ul class="submenu menu vertical" data-submenu>
+              <li><a href="http://zurb.com/responsive">Foundation Showcase</a></li>
+              <li><a href="http://foundation.zurb.com/showcase/brands.html">Brands</a></li>
+              <li><a href="http://foundation.zurb.com/showcase/case-studies.html">Case Studies</a></li>
+              <li><a href="http://foundation.zurb.com/showcase/blog.html">Blog</a></li>
+              <li><a href="http://foundation.zurb.com/showcase/buzz.html">Buzz</a></li>
+              <li><a href="http://foundation.zurb.com/showcase/about.html">About Foundation</a></li>
+            </ul>
+          </li>
+      
+          <li>
+            <a href="http://foundation.zurb.com/develop/getting-started.html">Develop</a>
+            <ul class="submenu menu vertical" data-submenu>
+              <li class="title">Frameworks</li>
+              <li><a href="http://foundation.zurb.com/sites.html">Foundation for Sites</a></li>
+              <li><a href="http://foundation.zurb.com/emails.html">Foundation for Email</a></li>
+              <li class="divider"></li>
+              <li class="title">Develop</li>
+              <li><a href="http://foundation.zurb.com/templates.html">HTML Templates</a></li>
+              <li><a href="http://foundation.zurb.com/sites/resources.html">Resources</a></li>
+              <li><a href="http://foundation.zurb.com/develop/building-blocks.html">Building Blocks</a></li>
+              <li><a href="http://foundation.zurb.com/upload.html">Annotate Code</a></li>
+            </ul>
+          </li>
+      
+          <li>
+            <a href="http://foundation.zurb.com/learn/tutorials.html">Tutorials</a>
+            <ul class="submenu menu vertical" data-submenu>
+              <li><a href="http://foundation.zurb.com/learn/tutorials.html">Tutorials</a></li>
+              <li><a href="http://zurb.com/university/lessons">Lessons</a></li>
+              <li><a href="http://zurb.com/university/courses">Courses</a></li>
+              <li><a href="http://zurb.com/university/training">Custom Training</a>
+              <li><a href="http://foundation.zurb.com/learn/certification.html">Certification</a></li>
+              <li><a href="http://foundation.zurb.com/learn/responsive-reading.html">Responsive Reading</a></li>
+            </ul>
+          </li>
+      
+          <li>
+            <a href="http://foundation.zurb.com/get-involved/contribute.html">Get Involved</a>
+            <ul class="submenu menu vertical" data-submenu>
+              <li><a href="http://foundation.zurb.com/get-involved/support.html">Connect</a></li>
+              <li><a href="http://foundation.zurb.com/get-involved/premium-support.html">PLZ Halp</a></li>
+              <li><a href="http://foundation.zurb.com/forum/">Foundation Forum</a></li>
+              <li><a href="http://foundation.zurb.com/learn/events.html">Events</a></li>
+              <li><a href="http://foundation.zurb.com/get-involved/faq.html">FAQs</a></li>
+              <li><a href="http://foundation.zurb.com/get-involved/contribute.html">Contribute</a></li>
+              <li><a href="http://foundation.zurb.com/get-involved/yetinauts.html">Yetinauts</a></li>
+            </ul>
+          </li>
+      
+          <li>
+            <a href="http://foundation.zurb.com/frameworks-docs.html">Docs</a>
+            <ul class="submenu menu vertical" data-submenu>
+              <li><a href="http://foundation.zurb.com/docs/" target="_blank">Sites Docs</a></li>
+              <li><a href="http://foundation.zurb.com/sites/docs/v/5.5.3/" target="_blank">F5 Docs</a></li>
+              <li><a href="http://foundation.zurb.com/emails/docs/" target="_blank">Email Docs</a></li>
+            </ul>
+          </li>
+      
+          <li><a href="http://foundation.zurb.com/develop/getting-started.html" class="button">Getting Started</a></li>
+      
+        </ul>
+      
+      </nav>
+      
+
+      <input type="text" class="docs-search" data-docs-search placeholder="Find a page, component, variable, mixin, function...">
+
+    
+
+      <div class="footer-course-upsell">
+        <section class="sites-course">
+          <div class="row" data-equalizer>
+            <div class="medium-7 medium-push-4 columns">
+              <div class="course-callout" data-equalizer-watch>
+                <h3 class="sites-course-title"><span>WEBINAR</span> Introduction to Foundation 6</h3>
+                <p>Achieve maximum thrust by learning how to use Foundation 6 to power your projects. The Foundation team will get you up to speed on everything you need to know to get the most out of Foundation 6.</p>
+                <a href="http://zurb.com/university/foundation-intro?utm_source=Foundation%20Docs&utm_medium=Docs&utm_content=Footer&utm_campaign=Footer%20Upsell" class="button primary" target="_blank">Learn Foundation 6</a>
+              </div>
+            </div>
+            <div class="medium-2 medium-pull-8 columns show-for-medium">
+              <div data-equalizer-watch>
+                <a href="http://zurb.com/university/foundation-intro?utm_source=Foundation%20Docs&utm_medium=Docs&utm_content=Footer&utm_campaign=Footer%20Upsell" class="" target="_blank"><img src="assets/img/yeti.svg"/></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      
+      <div class="docs-newsletter">
+        <div class="row">
+          <div class="medium-7 large-8 columns">
+            <a target="_blank" href="http://foundation.zurb.com/learn/responsive-reading.html">
+              <h5 class="">Download ZURB’s 21 Responsive Trends That Will Shape 2017</h5>
+              <p style="margin-bottom: 0;">Stay informed with amazing responsive trends each month from ZURB.</p>
+            </a>
+          </div>
+          <div class="medium-5 large-4 footer-signup-form columns">
+            <a style="margin-bottom: 0;" target="_blank" href="http://foundation.zurb.com/learn/responsive-reading.html" class="button expanded">Download the PDF</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="zurb-footer-top bg-fblue">
+        <div class="row property">
+          <div class="medium-4 columns">
+            <div class="property-info">
+              <h3>Foundation for Sites</h3>
+              <p>Foundation is a responsive front-end framework made by <a href="http://zurb.com">ZURB</a>, a product design company in Campbell, CA. This framework is the result of building web products &amp; services since 1998.
+              </p>
+            </div>
+          </div>
+      
+          <div class="medium-8 columns">
+            <div class="row collapse">
+              <div class="medium-4 columns">
+                <div class="learn-links">
+                  <h4 class="hide-for-small">Want more?</h4>
+                  <ul>
+                    <li><a href="http://foundation.zurb.com/emails.html">Foundation for Emails</a></li>
+                    <li><a href="http://zurb.com/university/courses">Foundation Training</a></li>
+                    <li><a href="http://zurb.com/library">Design Resources</a></li>
+                  </ul>
+                </div>
+              </div>
+                <div class="medium-4 columns">
+                  <div class="support-links">
+                    <h4 class="hide-for-small">Talk to us</h4>
+                    <p>Tweet us at <br> <a href="https://twitter.com/zurbfoundation">@ZURBfoundation</a></p>
+                    <p><a href="http://foundation.zurb.com/get-involved/contribute.html">Get involved in<br>our amazing community.</a></p>
+                  </div>
+                </div>
+              <div class="medium-4 columns">
+                <div class="connect-links">
+                  <h4 class="hide-for-small">Stay Updated</h4>
+                  <p>Keep up with the latest on Foundation. Find us on <a href="https://github.com/zurb/foundation">Github</a>.</p>
+                  <a href="http://zurb.com/news" class="small button">Stay Connected</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+      
+      <div class="zurb-footer-bottom">
+        <div class="row">
+          <div class="medium-4 medium-push-8 columns">
+            <ul class="home-social">
+              <li><a href="http://www.youtube.com/ZURB" class="youtube"></a></li>
+              <li><a href="http://www.twitter.com/ZURB" class="twitter"></a></li>
+              <li><a href="http://www.facebook.com/ZURB" class="facebook"></a></li>
+              <li><a href="http://zurb.com/contact" class="mail"></a></li>
+            </ul>
+          </div>
+          <div class="medium-8 medium-pull-4 columns">
+            <a href="http://www.zurb.com" class="zurb-logo regular"></a>
+            <ul class="zurb-links">
+              <li><a href="http://zurb.com/about">About</a></li>
+              <li><a href="http://zurb.com/blog">Blog</a></li>
+              <li><a href="http://zurb.com/news">News<span class="show-for-medium-up"> &amp; Events</span></a></li>
+              <li><a href="http://zurb.com/contact">Contact</a></li>
+              <li><a href="http://zurb.com/sitemap">Sitemap</a></li>
+             </ul>
+             <p class="copyright">&copy; 1998&dash;2017 ZURB, Inc. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  </div> -->
+
+
+  <script src="assets/js/vendor.js?hash=1edc6244cb455928675337f26178045a"></script>
+  <script src="assets/js/plugins/foundation.core.js?hash=74fa774c2a3d71e9fb3a31766779aa39"></script>
+  <script src="assets/js/plugins/foundation.util.box.js?hash=79ee511db8008a7eefbd63d78f01b68c"></script>
+  <script src="assets/js/plugins/foundation.util.imageLoader.js?hash=97ded2a98874671c35896eaf3b1a4596"></script>
+  <script src="assets/js/plugins/foundation.util.keyboard.js?hash=38ef92c1a4172fc1c48d077de8f9cb8c"></script>
+  <script src="assets/js/plugins/foundation.util.mediaQuery.js?hash=b8e4d884b81314de45b47519c389c607"></script>
+  <script src="assets/js/plugins/foundation.util.motion.js?hash=870ed425c2479916442582c3e098c562"></script>
+  <script src="assets/js/plugins/foundation.util.nest.js?hash=ff6286bbdcace9b2897adb4e6e91acc6"></script>
+  <script src="assets/js/plugins/foundation.util.timer.js?hash=0ea0cbf584dde2de85c8a081d76ec07c"></script>
+  <script src="assets/js/plugins/foundation.util.touch.js?hash=132b650474636d79e3c0a82ea1fe6113"></script>
+  <script src="assets/js/plugins/foundation.util.triggers.js?hash=72a896967cb11a918a7fca8a81506992"></script>
+  <script src="assets/js/plugins/foundation.abide.js?hash=64330a1ec6c9b0f2008873fef5e7e2c4"></script>
+  <script src="assets/js/plugins/foundation.accordion.js?hash=979c849575363a86e2b6e720d6ff28d2"></script>
+  <script src="assets/js/plugins/foundation.accordionMenu.js?hash=0b5b158b6591e28dbb1d8560a9e939ad"></script>
+  <script src="assets/js/plugins/foundation.drilldown.js?hash=c7b1f76c52247139824bdf411b308084"></script>
+  <script src="assets/js/plugins/foundation.dropdown.js?hash=ab53957781830437e4cf8e4528880f23"></script>
+  <script src="assets/js/plugins/foundation.dropdownMenu.js?hash=85fd2a42da80b3d105e82f175b55d1d6"></script>
+  <script src="assets/js/plugins/foundation.equalizer.js?hash=567a26d706dc1e3c5fc17dcc1a26c25a"></script>
+  <script src="assets/js/plugins/foundation.interchange.js?hash=f4ce34340421df1ce3283b18a7dd0fef"></script>
+  <script src="assets/js/plugins/foundation.smoothScroll.js?hash=b92807205dd85f7ac1c7b4f1d4490bd6"></script>
+  <script src="assets/js/plugins/foundation.magellan.js?hash=3bc1c095e864dc3cc449dfa051d0a047"></script>
+  <script src="assets/js/plugins/foundation.offcanvas.js?hash=74095d9b25fe0740a4fec54ddf3c72ed"></script>
+  <script src="assets/js/plugins/foundation.orbit.js?hash=a35202fac35b24c2612b7785598be504"></script>
+  <script src="assets/js/plugins/foundation.responsiveMenu.js?hash=8a4e6bc6d728820da48bfa9295350203"></script>
+  <script src="assets/js/plugins/foundation.responsiveToggle.js?hash=976d17d26476faee60674a8eeb9b5ae4"></script>
+  <script src="assets/js/plugins/foundation.reveal.js?hash=722fc81f33b5fed998a4d902c561c928"></script>
+  <script src="assets/js/plugins/foundation.slider.js?hash=d5b33c781d9f581a195ae6d4ae6151b9"></script>
+  <script src="assets/js/plugins/foundation.sticky.js?hash=4578315e66543e8fca9023994c291ff5"></script>
+  <script src="assets/js/plugins/foundation.tabs.js?hash=62bcac5d8d3e0fadd0c9ae3392d52937"></script>
+  <script src="assets/js/plugins/foundation.toggler.js?hash=ad9ae0f4d2e0290744c378ecd9d2cecd"></script>
+  <script src="assets/js/plugins/foundation.tooltip.js?hash=d1b1f81f7b4167e1b9a62f9f70aa9fce"></script>
+  <script src="assets/js/plugins/foundation.responsiveAccordionTabs.js?hash=104f49cf76a5d1e97deaafa02ae3d930"></script>
+
+  <script src="assets/js/docs.js?hash=a779b4efa4e01f67ace9b0466d31b00d"></script>
+ 
+
+</body>
+</html>
